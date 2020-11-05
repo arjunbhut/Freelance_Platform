@@ -99,7 +99,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://Arjun:arjun31@cluster0-ptp5p.mongodb.net/messages?authSource=admin&replicaSet=Cluster0-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'  )
+    'mongodb+srv://<USERNAME>:<PASSWORD>@cluster0-ptp5p.mongodb.net/<DATABASE>?authSource=admin&replicaSet=Cluster0-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'  )
   .then(result => {
     app.listen(8080);
   })
